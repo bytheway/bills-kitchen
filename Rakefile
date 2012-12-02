@@ -55,7 +55,7 @@ def download_tools
     %w{ sourceforge.net/projects/console/files/console-devel/2.00/Console-2.00b148-Beta_32bit.zip console2 },
     %w{ www.holistech.co.uk/sw/hostsedit/hostsedit.zip                                            hostedit },
     %w{ c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1%20x64.zip                              sublimetext2 },
-    %w{ msysgit.googlecode.com/files/PortableGit-1.7.10-preview20120409.7z                        portablegit },
+    %w{ msysgit.googlecode.com/files/PortableGit-1.8.0-preview20121022.7z                         portablegit },
     %w{ files.vagrantup.com/packages/eb590aa3d936ac71cbf9c64cf207f148ddfc000a/vagrant_1.0.3.msi   vagrant },
     %w{ switch.dl.sourceforge.net/project/kdiff3/kdiff3/0.9.96/KDiff3Setup_0.9.96.exe             kdiff3 
         kdiff3.exe },

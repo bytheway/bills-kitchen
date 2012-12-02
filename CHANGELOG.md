@@ -1,6 +1,7 @@
 
 # [0.8-SNAPSHOT]
 
+ * update to PortableGit 1.8.0
  * re-enable vagrant-vbguest plugin with guest addition updates disabled by default
  * add powershell set-env.ps1 variant of set-env.bat (thanks @ilude) 
  * add http redirect handling for downloads (thanks @ilude)
