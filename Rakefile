@@ -71,7 +71,8 @@ def patch_ruby
   %w{ bin include lib }.each do |dir|
     FileUtils.rm_rf "#{ruby_dir}/#{dir}"
   end
-  download_and_unpack "http://cloud.github.com/downloads/thecodeshop/ruby/tcs-ruby193_require_fenix_gc_hash_20120527.7z", ruby_dir
+  # built as described here: https://gist.github.com/4199712
+  unpack "X:/xxx/rubyinstaller/sandbox/ruby19_mingw/ruby19_mingw.7z", ruby_dir
 end
 
 def download_boxes
