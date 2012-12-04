@@ -71,7 +71,13 @@ def patch_ruby
   %w{ bin include lib }.each do |dir|
     FileUtils.rm_rf "#{ruby_dir}/#{dir}"
   end
-  download_and_unpack "http://cloud.github.com/downloads/thecodeshop/ruby/tcs-ruby193_require_fenix_gc_hash_20120527.7z", ruby_dir
+  # download_and_unpack "http://cloud.github.com/downloads/thecodeshop/ruby/tcs-ruby193_require_fenix_gc_hash_20120527.7z", ruby_dir
+  download_and_unpack "http://cdn.rubyinstaller.org/archives/1.9.3-p327/ruby-1.9.3-p327-i386-mingw32.7z", ruby_dir
+  extract_dir = "#{ruby_dir}/ruby-1.9.3-p327-i386-mingw32"
+  %w{ bin include lib }.each do |dir|
+    FileUtils.mv "#{extract_dir}/#{dir}", ruby_dir
+  end
+  FileUtils.rm_rf extract_dir
 end
 
 def download_boxes
